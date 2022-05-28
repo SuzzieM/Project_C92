@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Mathzzo</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="quiz_page.css">
+    </head>
+
+    <body>
+    
+        <h4 id="player1_name"></h4>  <span id="player1_score"></span>
+        <br>
+        <h4 id="player2_name"></h4>  <span id="player2_score"></span>
+
+        <div class="container">
+        <center>
+            <h1 style ="color: white;">Welcome to the Mathzzo</h1>
+            <br>
+            <br>
+            <h4>Multiply : </h4>
+            <h3 id="player_question"></h3>
+            <br>
+            <h3 id="player_answer"></h3>
+            <div id="output" class="col-lg-6"></div>
+            <br>
+            <h4>Number 1</h4>
+            <input type="text" id="number 1" class="form-control" placeholder="Number 1">
+            <br>
+            <h4>Number 2</h4>
+            <input type="text" id="number 2" class="form-control" placeholder="Number 2"> 
+            <br>
+            <br>
+            <button class="btn btn-success"  onclick="send() ;">SEND</button>
+            <br>
+            <br>
+            <button class="btn btn-primary" onclick="nextScreen();">Easy Level</button>
+            <br>
+            <br>
+        <button onclick="back()" class="btn btn-warning" style="width : 10%;">Back</button>         
+        </center>
+        </div>
+        <script src="quiz_page.js"></script>
+    </body>
+</html>
